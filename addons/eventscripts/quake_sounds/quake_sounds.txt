@@ -1,0 +1,340 @@
+"quake_sounds"
+{
+	"styles"
+	{
+		"standard" "Standard" 	// <-- Do not remove this line! This is the standard setting!
+		"russian" "Russian"		// Syntax: "name" "Menuname"
+		"female" "Female"		// 		^^^^ -> "sound_name" in the events!
+		// "dark" "Dark"		//
+		// "robot" "Robot"		//
+	}
+	// mode => 0 = off, 1 = all players hear it, 2 = players involved hear it, 3 = attacker hears it, 4 = victim hears it
+	// mode is not working on server or game events, only on player events!
+	// prio => The sound with the highest prio(rity) for the event player_death plays
+	// prio is only working on the player_death event and is not avaible for the special_selfkill and special_teamkill trigger!
+	"event_round_start"
+	{
+		"sound"
+		{
+			//"standard" "quake/standard/prepare.mp3"
+			// "robot" "quake/robot/prepare.mp3"
+  		}
+	}
+	"event_round_freeze_end"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/play.wav"
+			"female" "quake/female/prepare.mp3"
+			//"dark" "quake/dark/play.wav"
+			//"robot" "quake/robot/play.mp3"
+  		}
+	}
+	"weapon_knife"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/humiliation.mp3"
+			//"russian" "quake/russian/humiliation.mp3"
+			//"female" "quake/female/humiliation.mp3"
+			//"robot" "quake/robot/humiliation.mp3"
+  		}
+ 		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"weapon_hegrenade"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/perfect.mp3"
+			//"robot" "quake/robot/perfect.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"special_teamkill"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/teamkiller.mp3"
+			//"robot" "quake/robot/teamkiller.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"special_selfkill"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/holyshit.mp3"
+			"russian" "quake/russian/holyshit.mp3"
+			"female" "quake/female/holyshit.mp3"
+			//"robot" "quake/robot/holyshit.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+	}
+	"special_headshot"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/headshot.mp3"
+			"female" "quake/female/headshot.mp3"
+			//"robot" "quake/robot/headshot.mp3"
+			"russian" "quake/russian/headshot.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "3"
+	}
+	"headshots_3"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/hattrick.wav"
+			//"robot" "quake/robot/hattrick.mp3"
+			"russian" "quake/russian/hattrick.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "3"
+	}
+	"headshots_4"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/combowhore.mp3"
+			//"robot" "quake/robot/combowhore.mp3"
+			"russian" "quake/russian/combowhore.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "3"
+	}
+	"headshots_5"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/headhunter.wav"
+			//"robot" "quake/robot/headhunter.mp3"
+			"russian" "quake/russian/headhunter.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "3"
+	}
+	"multikills_1"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/doublekill.mp3"
+			"russian" "quake/russian/doublekill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "2"
+	}
+	"multikills_2"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/triplekill.mp3"
+			"russian" "quake/russian/triplekill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "2"
+	}
+	"multikills_3"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/multikill.mp3"
+			"russian" "quake/russian/multikill.mp3"
+			"female" "quake/female/multikill.mp3"
+			//"dark" "quake/dark/multikill.wav"
+			//"robot" "quake/robot/multikill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "2"
+	}
+	"multikills_4"
+	{
+		"sound"
+		{
+			//"standard" "quake/standard/megakill.mp3"
+			"russian" "quake/standard/megakill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "2"
+	}
+	"kill_1"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/firstblood.mp3"
+			"russian" "quake/russian/firstblood.mp3"
+			"female" "quake/female/firstblood.mp3"
+			//"dark" "quake/dark/firstblood.wav"
+			//"robot" "quake/robot/firstblood.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "4"
+	}
+	"playerkills_4"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/dominating.mp3"
+			"russian" "quake/russian/dominating.mp3"
+			"female" "quake/female/dominating.mp3"
+			//"dark" "quake/dark/dominating.wav"
+			//"robot" "quake/robot/dominating.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_6"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/rampage.mp3"
+			"russian" "quake/russian/rampage.mp3"
+			"female" "quake/female/rampage.mp3"
+			//"dark" "quake/dark/rampage.wav"
+			//"robot" "quake/robot/rampage.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_8"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/killingspree.mp3"
+			"russian" "quake/russian/killingspree.mp3"
+			"female" "quake/female/killingspree.mp3"
+			//"dark" "quake/dark/killingspree.wav"
+			//"robot" "quake/robot/killingspree.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_10"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/monsterkill.mp3"
+			"russian" "quake/russian/monsterkill.mp3"
+			"female" "quake/female/monsterkill.mp3"
+			//"dark" "quake/dark/monsterkill.wav"
+			//"robot" "quake/robot/monsterkill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_12"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/unstoppable.mp3"
+			"russian" "quake/russian/unstoppable.mp3"
+			"female" "quake/female/unstoppable.mp3"
+			//"dark" "quake/dark/unstoppable.wav"
+			//"robot" "quake/robot/unstoppable.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_14"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/ultrakill.mp3"
+			"russian" "quake/russian/ultrakill.mp3"
+			"female" "quake/female/ultrakill.mp3"
+			//"dark" "quake/dark/ultrakill.wav"
+			//"robot" "quake/robot/ultrakill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_16"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/godlike.mp3"
+			"russian" "quake/russian/godlike.mp3"
+			"female" "quake/female/godlike.mp3"
+			//"dark" "quake/dark/godlike.wav"
+			//"robot" "quake/robot/godlike.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_18"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/wickedsick.mp3"
+			"russian" "quake/russian/wickedsick.mp3"
+			"female" "quake/female/wickedsick.mp3"
+			//"dark" "quake/dark/wickedsick.wav"
+			//"robot" "quake/robot/wickedsick.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_20"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/impressive.mp3"
+			"russian" "quake/russian/impressive.mp3"
+			//"robot" "quake/robot/impressive.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_22"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/ludicrouskill.mp3"
+			"russian" "quake/russian/ludicrouskill.mp3"
+			//"dark" "quake/dark/ludicrouskill.wav"
+			//"robot" "quake/robot/ludicrouskill.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+	"playerkills_24"
+	{
+		"sound"
+		{
+			"standard" "quake/standard/holyshit.mp3"
+			"russian" "quake/russian/holyshit.mp3"
+			"female" "quake/female/holyshit.mp3"
+			//"robot" "quake/robot/holyshit.mp3"
+  		}
+		"mode" "1"
+		"visual_mode" "1"
+		"prio" "1"
+	}
+}
